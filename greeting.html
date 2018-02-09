@@ -6,6 +6,7 @@
   <body>
      <p>Hello world!</p>
      <div id="app"></div>
+     <div id="progress"></div>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
@@ -22,6 +23,16 @@
 
         ReactDOM.render(
           <Greeting />, document.getElementById('app')
+        );
+
+        class KwenaProgress extends React.Component {
+          render() {
+            return (<div><h2>Kwena is progressing well with React and Git</h2></div>);
+          }
+        }
+
+        ReactDOM.render(
+          <KwenaProgress />, document.getElementById('progress')
         );
      </script>
   </body>
